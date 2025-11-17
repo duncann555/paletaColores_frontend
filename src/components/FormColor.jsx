@@ -7,19 +7,27 @@ const coloresPredefinidos = {
   rojo: "#FF0000",
   azul: "#0000FF",
   verde: "#008000",
+  verdeclaro: "#90EE90",
   amarillo: "#FFFF00",
   naranja: "#FFA500",
+  naranjaclaro: "#FFB347",
   violeta: "#8A2BE2",
   purpura: "#800080",
   rosa: "#FFC0CB",
   celeste: "#87CEEB",
   turquesa: "#40E0D0",
+  azulmarino: "#000080",
   bordo: "#800000",
+  vino: "#722F37",
   marron: "#8B4513",
   chocolate: "#7B3F00",
   beige: "#F5F5DC",
   crema: "#FFFDD0",
+  arena: "#EDC9AF",
+  terracota: "#E2725B",
   gris: "#808080",
+  grisclaro: "#D3D3D3",
+  grisoscuro: "#505050",
   negro: "#000000",
   blanco: "#FFFFFF",
   salmon: "#FA8072",
@@ -28,7 +36,13 @@ const coloresPredefinidos = {
   magenta: "#FF00FF",
   cian: "#00FFFF",
   lila: "#C8A2C8",
+  lavanda: "#E6E6FA",
+  oliva: "#808000",
+  mostaza: "#FFDB58",
+  dorado: "#FFD700",
+  plateado: "#C0C0C0"
 };
+
 
 
 
