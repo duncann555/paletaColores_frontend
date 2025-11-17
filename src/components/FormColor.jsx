@@ -48,7 +48,6 @@ const FormColor = ({ onColorCreado }) => {
     },
   });
 
-  // Vista previa (si HEX está completo lo usa, si no RGB)
   const nombrePreview =
     coloresPredefinidos[watch("nombre")?.toLowerCase()] || "";
   const preview =
@@ -57,22 +56,19 @@ const FormColor = ({ onColorCreado }) => {
   const onSubmit = async (data) => {
     let valorFinal = "";
 
-    // Si el usuario escribió HEX
     if (data.hexInput) {
       valorFinal = data.hexInput;
     }
-    // Si el usuario escribió RGB
     else if (data.rgbInput) {
       valorFinal = data.rgbInput;
     }
-    // Si NO escribió HEX ni RGB → usar el nombre
     else {
       const nombreLower = data.nombre.toLowerCase();
 
       if (coloresPredefinidos[nombreLower]) {
         valorFinal = coloresPredefinidos[nombreLower];
       } else {
-        valorFinal = "#555"; // color por defecto si el nombre no existe
+        valorFinal = "#555";
       }
     }
 
@@ -94,7 +90,6 @@ const FormColor = ({ onColorCreado }) => {
     <div>
       <h3 className="mb-3 text-light">Administrar colores</h3>
 
-      {/* Vista previa */}
       <div
         className="mb-3"
         style={{
@@ -107,7 +102,7 @@ const FormColor = ({ onColorCreado }) => {
       ></div>
 
       <Form onSubmit={handleSubmit(onSubmit)}>
-        {/* Nombre */}
+        {}
         <Form.Group className="mb-3">
           <Form.Label>Nombre del color *</Form.Label>
           <Form.Control

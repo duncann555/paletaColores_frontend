@@ -22,7 +22,6 @@ const ItemColor = ({ color, onCambioColores }) => {
   };
 
   const handleEdit = async () => {
-    // Editar nombre
     const { value: nombreNuevo } = await Swal.fire({
       title: "Editar nombre",
       input: "text",
@@ -33,7 +32,6 @@ const ItemColor = ({ color, onCambioColores }) => {
 
     if (!nombreNuevo) return;
 
-    // Editar valor (HEX o RGB)
     const { value: valorNuevo } = await Swal.fire({
       title: "Editar color",
       input: "text",
